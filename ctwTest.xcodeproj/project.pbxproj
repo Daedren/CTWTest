@@ -3,17 +3,76 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00CC593196E6472B1D1BE617 /* Pods_ctwTest_Data_ctwTest_DataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E702123922932D9198E78DA9 /* Pods_ctwTest_Data_ctwTest_DataTests.framework */; };
+		092AB4C0231289AE00786394 /* InteractorConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7678D23117FB200E789CA /* InteractorConfigurator.swift */; };
+		092AB4C32312914B00786394 /* BaseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092AB4C22312914B00786394 /* BaseViewCell.swift */; };
+		092AB4C62312F06E00786394 /* SuggestionQueryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092AB4C52312F06E00786394 /* SuggestionQueryModel.swift */; };
+		092AB4C82312F18000786394 /* GeocoderAutocompleteRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092AB4C72312F18000786394 /* GeocoderAutocompleteRequestModel.swift */; };
+		092AB4CB2312F35100786394 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092AB4CA2312F35100786394 /* AppError.swift */; };
+		092AB4CD2312F70700786394 /* InterfacesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092AB4CC2312F70600786394 /* InterfacesConfigurator.swift */; };
+		092AB4D02312F9C700786394 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092AB4CF2312F9C700786394 /* LocationManager.swift */; };
+		092AB4D7231319F100786394 /* GeoSuggestionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092AB4D6231319F100786394 /* GeoSuggestionTests.swift */; };
+		092AB4D923131C3C00786394 /* LocationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092AB4D22312FA1300786394 /* LocationError.swift */; };
+		092AB4DB23131F2100786394 /* GetCurrentLocationInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092AB4DA23131F2100786394 /* GetCurrentLocationInteractorTests.swift */; };
+		092AB4DF2313213000786394 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092AB4DE2313213000786394 /* APIError.swift */; };
+		092AB4E22313226A00786394 /* GeoSuggestionGatewayImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092AB4E12313226A00786394 /* GeoSuggestionGatewayImplTests.swift */; };
+		092AB4E52313249600786394 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092AB4E42313249600786394 /* GeneratedMocks.swift */; };
+		092AB4EA23132F1400786394 /* GeocoderAutocompleteResponseModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092AB4E923132F1400786394 /* GeocoderAutocompleteResponseModelTests.swift */; };
 		09ABAD422311388D00161CBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ABAD412311388D00161CBD /* AppDelegate.swift */; };
-		09ABAD442311388D00161CBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ABAD432311388D00161CBD /* ViewController.swift */; };
-		09ABAD472311388D00161CBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09ABAD452311388D00161CBD /* Main.storyboard */; };
-		09ABAD4A2311388D00161CBD /* ctwTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09ABAD482311388D00161CBD /* ctwTest.xcdatamodeld */; };
 		09ABAD4C2311388F00161CBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09ABAD4B2311388F00161CBD /* Assets.xcassets */; };
 		09ABAD4F2311388F00161CBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09ABAD4D2311388F00161CBD /* LaunchScreen.storyboard */; };
 		09ABAD5A2311388F00161CBD /* ctwTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ABAD592311388F00161CBD /* ctwTestTests.swift */; };
+		09ABAD72231138C400161CBD /* ctwTest_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABAD69231138C400161CBD /* ctwTest_Domain.framework */; };
+		09ABAD7B231138C400161CBD /* ctwTest_Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 09ABAD6B231138C400161CBD /* ctwTest_Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09ABAD7E231138C400161CBD /* ctwTest_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABAD69231138C400161CBD /* ctwTest_Domain.framework */; };
+		09ABAD7F231138C400161CBD /* ctwTest_Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABAD69231138C400161CBD /* ctwTest_Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		09ABAD8A2311415200161CBD /* GeoSuggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ABAD892311415200161CBD /* GeoSuggestion.swift */; };
+		09D767532311466900E789CA /* GetGeoSuggestionFromQueryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D767522311466900E789CA /* GetGeoSuggestionFromQueryInteractor.swift */; };
+		09D767552311468E00E789CA /* GetCurrentLocationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D767542311468E00E789CA /* GetCurrentLocationInteractor.swift */; };
+		09D76759231147B100E789CA /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D76758231147B100E789CA /* Interactor.swift */; };
+		09D7675B231149CE00E789CA /* GetAddressFromQueryInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7675A231149CE00E789CA /* GetAddressFromQueryInteractorTests.swift */; };
+		09D7675E23114A5F00E789CA /* GeoSuggestionGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7675D23114A5F00E789CA /* GeoSuggestionGateway.swift */; };
+		09D7676023114A6700E789CA /* LocationGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7675F23114A6700E789CA /* LocationGateway.swift */; };
+		09D7676223114C3C00E789CA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7676123114C3C00E789CA /* Location.swift */; };
+		09D7676523114F8B00E789CA /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7676423114F8B00E789CA /* GeneratedMocks.swift */; };
+		09D767672311518B00E789CA /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D767662311518B00E789CA /* Entity.swift */; };
+		09D7676A2311562000E789CA /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D767692311562000E789CA /* DomainError.swift */; };
+		09D7676D23115C3A00E789CA /* LocationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7676C23115C3A00E789CA /* LocationListViewController.swift */; };
+		09D7676F23115C4300E789CA /* LocationListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7676E23115C4300E789CA /* LocationListPresenter.swift */; };
+		09D7677123115C4B00E789CA /* LocationListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7677023115C4B00E789CA /* LocationListWireframe.swift */; };
+		09D7677323115C8000E789CA /* LocationListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D7677223115C8000E789CA /* LocationListView.xib */; };
+		09D767772311728000E789CA /* LocationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D767762311727F00E789CA /* LocationTableViewCell.xib */; };
+		09D76779231175A000E789CA /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D76778231175A000E789CA /* LocationTableViewCell.swift */; };
+		09D7677B2311761F00E789CA /* LocationTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7677A2311761F00E789CA /* LocationTableViewCellModel.swift */; };
+		09D7678023117D4D00E789CA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09D7677F23117D4D00E789CA /* Localizable.strings */; };
+		09D7678223117E8600E789CA /* LocationListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7678123117E8600E789CA /* LocationListConfigurator.swift */; };
+		09D7678523117EEB00E789CA /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7678423117EEB00E789CA /* Configurator.swift */; };
+		09D7678823117F8800E789CA /* NetworkConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7678723117F8800E789CA /* NetworkConfigurator.swift */; };
+		09D7678A23117F8F00E789CA /* GatewayConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7678923117F8F00E789CA /* GatewayConfigurator.swift */; };
+		09D7678C23117FA900E789CA /* StorageConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7678B23117FA900E789CA /* StorageConfigurator.swift */; };
+		09D767902311806200E789CA /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7678F2311806200E789CA /* Wireframe.swift */; };
+		09D76792231182BD00E789CA /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D76791231182BD00E789CA /* R.generated.swift */; };
+		09D767A12311855C00E789CA /* ctwTest_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D767982311855B00E789CA /* ctwTest_Data.framework */; };
+		09D767AA2311855C00E789CA /* ctwTest_Data.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D7679A2311855C00E789CA /* ctwTest_Data.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D767AD2311855C00E789CA /* ctwTest_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D767982311855B00E789CA /* ctwTest_Data.framework */; };
+		09D767AE2311855C00E789CA /* ctwTest_Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09D767982311855B00E789CA /* ctwTest_Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		09D767BF23118C5300E789CA /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D767B82311889F00E789CA /* APIRequest.swift */; };
+		09D767C023118C5700E789CA /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D767BA231189F000E789CA /* NetworkDispatcher.swift */; };
+		09D767C123118C5C00E789CA /* GeoSuggestionGatewayImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D767BD23118A7000E789CA /* GeoSuggestionGatewayImpl.swift */; };
+		09D767C723118E1600E789CA /* GeocodeAutocomplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D767C623118E1600E789CA /* GeocodeAutocomplete.swift */; };
+		09D767CA23118FB500E789CA /* GeocoderAutocompleteResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D767C923118FB500E789CA /* GeocoderAutocompleteResponseModel.swift */; };
+		09D767CD2311922700E789CA /* URLSessionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D767CC2311922700E789CA /* URLSessionClient.swift */; };
+		09D767CF23119D8E00E789CA /* LocationGatewayImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D767CE23119D8E00E789CA /* LocationGatewayImpl.swift */; };
+		09D767D323119EBC00E789CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09D767D223119EBC00E789CA /* InfoPlist.strings */; };
+		1640C8199F3E9B8F33FBB885 /* Pods_ctwTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33BC9495B72F127E7224A73A /* Pods_ctwTestTests.framework */; };
+		52971F7D32E5617C6CA81555 /* Pods_ctwTest_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 382DB3E07C685F5ED3336184 /* Pods_ctwTest_Data.framework */; };
+		8A3339C962603F7FE6E37573 /* Pods_ctwTest_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDABF8FF5E958363398211FA /* Pods_ctwTest_Domain.framework */; };
+		9D7182032CADF371B3C2AA9D /* Pods_ctwTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40D628316FCCBA9FF22EDFE /* Pods_ctwTest.framework */; };
+		AE3E880D8B7839DEC99284EB /* Pods_ctwTest_Domain_ctwTest_DomainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D65FADE69E267DC9B007AB1 /* Pods_ctwTest_Domain_ctwTest_DomainTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,20 +83,152 @@
 			remoteGlobalIDString = 09ABAD3D2311388D00161CBD;
 			remoteInfo = ctwTest;
 		};
+		09ABAD73231138C400161CBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09ABAD362311388D00161CBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09ABAD68231138C400161CBD;
+			remoteInfo = "ctwTest-Domain";
+		};
+		09ABAD75231138C400161CBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09ABAD362311388D00161CBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09ABAD3D2311388D00161CBD;
+			remoteInfo = ctwTest;
+		};
+		09ABAD7C231138C400161CBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09ABAD362311388D00161CBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09ABAD68231138C400161CBD;
+			remoteInfo = "ctwTest-Domain";
+		};
+		09D767A22311855C00E789CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09ABAD362311388D00161CBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09D767972311855B00E789CA;
+			remoteInfo = "ctwTest-Data";
+		};
+		09D767A42311855C00E789CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09ABAD362311388D00161CBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09ABAD3D2311388D00161CBD;
+			remoteInfo = ctwTest;
+		};
+		09D767AB2311855C00E789CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09ABAD362311388D00161CBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09D767972311855B00E789CA;
+			remoteInfo = "ctwTest-Data";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		09ABAD83231138C400161CBD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				09ABAD7F231138C400161CBD /* ctwTest_Domain.framework in Embed Frameworks */,
+				09D767AE2311855C00E789CA /* ctwTest_Data.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		092AB4C22312914B00786394 /* BaseViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewCell.swift; sourceTree = "<group>"; };
+		092AB4C52312F06E00786394 /* SuggestionQueryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionQueryModel.swift; sourceTree = "<group>"; };
+		092AB4C72312F18000786394 /* GeocoderAutocompleteRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocoderAutocompleteRequestModel.swift; sourceTree = "<group>"; };
+		092AB4CA2312F35100786394 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		092AB4CC2312F70600786394 /* InterfacesConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfacesConfigurator.swift; sourceTree = "<group>"; };
+		092AB4CF2312F9C700786394 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		092AB4D22312FA1300786394 /* LocationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationError.swift; sourceTree = "<group>"; };
+		092AB4D6231319F100786394 /* GeoSuggestionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSuggestionTests.swift; sourceTree = "<group>"; };
+		092AB4DA23131F2100786394 /* GetCurrentLocationInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrentLocationInteractorTests.swift; sourceTree = "<group>"; };
+		092AB4DE2313213000786394 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		092AB4E12313226A00786394 /* GeoSuggestionGatewayImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSuggestionGatewayImplTests.swift; sourceTree = "<group>"; };
+		092AB4E42313249600786394 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		092AB4E923132F1400786394 /* GeocoderAutocompleteResponseModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocoderAutocompleteResponseModelTests.swift; sourceTree = "<group>"; };
 		09ABAD3E2311388D00161CBD /* ctwTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ctwTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09ABAD412311388D00161CBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		09ABAD432311388D00161CBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		09ABAD462311388D00161CBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		09ABAD492311388D00161CBD /* ctwTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ctwTest.xcdatamodel; sourceTree = "<group>"; };
 		09ABAD4B2311388F00161CBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09ABAD4E2311388F00161CBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09ABAD502311388F00161CBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09ABAD552311388F00161CBD /* ctwTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ctwTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09ABAD592311388F00161CBD /* ctwTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ctwTestTests.swift; sourceTree = "<group>"; };
 		09ABAD5B2311388F00161CBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09ABAD69231138C400161CBD /* ctwTest_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ctwTest_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09ABAD6B231138C400161CBD /* ctwTest_Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ctwTest_Domain.h; sourceTree = "<group>"; };
+		09ABAD6C231138C400161CBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09ABAD71231138C400161CBD /* ctwTest-DomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ctwTest-DomainTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		09ABAD7A231138C400161CBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09ABAD892311415200161CBD /* GeoSuggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSuggestion.swift; sourceTree = "<group>"; };
+		09D767522311466900E789CA /* GetGeoSuggestionFromQueryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGeoSuggestionFromQueryInteractor.swift; sourceTree = "<group>"; };
+		09D767542311468E00E789CA /* GetCurrentLocationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrentLocationInteractor.swift; sourceTree = "<group>"; };
+		09D76758231147B100E789CA /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		09D7675A231149CE00E789CA /* GetAddressFromQueryInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAddressFromQueryInteractorTests.swift; sourceTree = "<group>"; };
+		09D7675D23114A5F00E789CA /* GeoSuggestionGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSuggestionGateway.swift; sourceTree = "<group>"; };
+		09D7675F23114A6700E789CA /* LocationGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationGateway.swift; sourceTree = "<group>"; };
+		09D7676123114C3C00E789CA /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		09D7676423114F8B00E789CA /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		09D767662311518B00E789CA /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		09D767692311562000E789CA /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
+		09D7676C23115C3A00E789CA /* LocationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewController.swift; sourceTree = "<group>"; };
+		09D7676E23115C4300E789CA /* LocationListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListPresenter.swift; sourceTree = "<group>"; };
+		09D7677023115C4B00E789CA /* LocationListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListWireframe.swift; sourceTree = "<group>"; };
+		09D7677223115C8000E789CA /* LocationListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationListView.xib; sourceTree = "<group>"; };
+		09D767762311727F00E789CA /* LocationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationTableViewCell.xib; sourceTree = "<group>"; };
+		09D76778231175A000E789CA /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		09D7677A2311761F00E789CA /* LocationTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCellModel.swift; sourceTree = "<group>"; };
+		09D7677F23117D4D00E789CA /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		09D7678123117E8600E789CA /* LocationListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListConfigurator.swift; sourceTree = "<group>"; };
+		09D7678423117EEB00E789CA /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
+		09D7678723117F8800E789CA /* NetworkConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigurator.swift; sourceTree = "<group>"; };
+		09D7678923117F8F00E789CA /* GatewayConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewayConfigurator.swift; sourceTree = "<group>"; };
+		09D7678B23117FA900E789CA /* StorageConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageConfigurator.swift; sourceTree = "<group>"; };
+		09D7678D23117FB200E789CA /* InteractorConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorConfigurator.swift; sourceTree = "<group>"; };
+		09D7678F2311806200E789CA /* Wireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
+		09D76791231182BD00E789CA /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		09D767982311855B00E789CA /* ctwTest_Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ctwTest_Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D7679A2311855C00E789CA /* ctwTest_Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ctwTest_Data.h; sourceTree = "<group>"; };
+		09D7679B2311855C00E789CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D767A02311855C00E789CA /* ctwTest-DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ctwTest-DataTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D767A92311855C00E789CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D767B82311889F00E789CA /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		09D767BA231189F000E789CA /* NetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		09D767BD23118A7000E789CA /* GeoSuggestionGatewayImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSuggestionGatewayImpl.swift; sourceTree = "<group>"; };
+		09D767C623118E1600E789CA /* GeocodeAutocomplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodeAutocomplete.swift; sourceTree = "<group>"; };
+		09D767C923118FB500E789CA /* GeocoderAutocompleteResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocoderAutocompleteResponseModel.swift; sourceTree = "<group>"; };
+		09D767CC2311922700E789CA /* URLSessionClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionClient.swift; sourceTree = "<group>"; };
+		09D767CE23119D8E00E789CA /* LocationGatewayImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationGatewayImpl.swift; sourceTree = "<group>"; };
+		09D767D223119EBC00E789CA /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		0D65FADE69E267DC9B007AB1 /* Pods_ctwTest_Domain_ctwTest_DomainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ctwTest_Domain_ctwTest_DomainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15387388851E4640335FB111 /* Pods-ctwTest-Domain-ctwTest-DomainTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ctwTest-Domain-ctwTest-DomainTests.release.xcconfig"; path = "Target Support Files/Pods-ctwTest-Domain-ctwTest-DomainTests/Pods-ctwTest-Domain-ctwTest-DomainTests.release.xcconfig"; sourceTree = "<group>"; };
+		16F07008A53F8FD0A36E150B /* Pods-ctwTest-Data.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ctwTest-Data.debug.xcconfig"; path = "Target Support Files/Pods-ctwTest-Data/Pods-ctwTest-Data.debug.xcconfig"; sourceTree = "<group>"; };
+		33BC9495B72F127E7224A73A /* Pods_ctwTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ctwTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		382DB3E07C685F5ED3336184 /* Pods_ctwTest_Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ctwTest_Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		433E3C4932432FB044180E47 /* Pods-ctwTest-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ctwTest-Domain.release.xcconfig"; path = "Target Support Files/Pods-ctwTest-Domain/Pods-ctwTest-Domain.release.xcconfig"; sourceTree = "<group>"; };
+		61AC20D3C66185554651EA8B /* Pods-ctwTest-Data-ctwTest-DataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ctwTest-Data-ctwTest-DataTests.release.xcconfig"; path = "Target Support Files/Pods-ctwTest-Data-ctwTest-DataTests/Pods-ctwTest-Data-ctwTest-DataTests.release.xcconfig"; sourceTree = "<group>"; };
+		7941D8A130462D66D10C70B0 /* Pods-ctwTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ctwTestTests.debug.xcconfig"; path = "Target Support Files/Pods-ctwTestTests/Pods-ctwTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		80EC126B9FA79D3773D34DE0 /* Pods-ctwTest-DomainTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ctwTest-DomainTests.release.xcconfig"; path = "Target Support Files/Pods-ctwTest-DomainTests/Pods-ctwTest-DomainTests.release.xcconfig"; sourceTree = "<group>"; };
+		8C67EDCFFEBF861AE63A4F0D /* Pods-ctwTest-Data-ctwTest-DataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ctwTest-Data-ctwTest-DataTests.debug.xcconfig"; path = "Target Support Files/Pods-ctwTest-Data-ctwTest-DataTests/Pods-ctwTest-Data-ctwTest-DataTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9BA32EB985084A6BF2761954 /* Pods-ctwTest-Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ctwTest-Domain.debug.xcconfig"; path = "Target Support Files/Pods-ctwTest-Domain/Pods-ctwTest-Domain.debug.xcconfig"; sourceTree = "<group>"; };
+		9E2A3516C8CFA7EAA6F3342B /* Pods-ctwTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ctwTest.release.xcconfig"; path = "Target Support Files/Pods-ctwTest/Pods-ctwTest.release.xcconfig"; sourceTree = "<group>"; };
+		B5F5CB066F0A570C518C382F /* Pods-ctwTest-Data.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ctwTest-Data.release.xcconfig"; path = "Target Support Files/Pods-ctwTest-Data/Pods-ctwTest-Data.release.xcconfig"; sourceTree = "<group>"; };
+		B92E26C07363888AE0ECBB0C /* Pods-ctwTest-DomainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ctwTest-DomainTests.debug.xcconfig"; path = "Target Support Files/Pods-ctwTest-DomainTests/Pods-ctwTest-DomainTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C40D628316FCCBA9FF22EDFE /* Pods_ctwTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ctwTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D29D200D39BEC0A66E03D2DF /* Pods-ctwTest-Domain-ctwTest-DomainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ctwTest-Domain-ctwTest-DomainTests.debug.xcconfig"; path = "Target Support Files/Pods-ctwTest-Domain-ctwTest-DomainTests/Pods-ctwTest-Domain-ctwTest-DomainTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5DDC835DFF18FCA74A18815 /* Pods-ctwTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ctwTestTests.release.xcconfig"; path = "Target Support Files/Pods-ctwTestTests/Pods-ctwTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		E702123922932D9198E78DA9 /* Pods_ctwTest_Data_ctwTest_DataTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ctwTest_Data_ctwTest_DataTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99ABA50E8D0812A6050D98B /* Pods-ctwTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ctwTest.debug.xcconfig"; path = "Target Support Files/Pods-ctwTest/Pods-ctwTest.debug.xcconfig"; sourceTree = "<group>"; };
+		EDABF8FF5E958363398211FA /* Pods_ctwTest_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ctwTest_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +236,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09ABAD7E231138C400161CBD /* ctwTest_Domain.framework in Frameworks */,
+				9D7182032CADF371B3C2AA9D /* Pods_ctwTest.framework in Frameworks */,
+				09D767AD2311855C00E789CA /* ctwTest_Data.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +246,141 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1640C8199F3E9B8F33FBB885 /* Pods_ctwTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09ABAD66231138C400161CBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3339C962603F7FE6E37573 /* Pods_ctwTest_Domain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09ABAD6E231138C400161CBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09ABAD72231138C400161CBD /* ctwTest_Domain.framework in Frameworks */,
+				AE3E880D8B7839DEC99284EB /* Pods_ctwTest_Domain_ctwTest_DomainTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09D767952311855B00E789CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52971F7D32E5617C6CA81555 /* Pods_ctwTest_Data.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09D7679D2311855C00E789CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D767A12311855C00E789CA /* ctwTest_Data.framework in Frameworks */,
+				00CC593196E6472B1D1BE617 /* Pods_ctwTest_Data_ctwTest_DataTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		092AB4C12312914100786394 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				092AB4C22312914B00786394 /* BaseViewCell.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		092AB4C42312F06300786394 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				092AB4C52312F06E00786394 /* SuggestionQueryModel.swift */,
+				09D7676123114C3C00E789CA /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		092AB4C92312F34100786394 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				092AB4CA2312F35100786394 /* AppError.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		092AB4D12312F9CA00786394 /* Gateway Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				09D767CE23119D8E00E789CA /* LocationGatewayImpl.swift */,
+			);
+			path = "Gateway Implementations";
+			sourceTree = "<group>";
+		};
+		092AB4D5231319E100786394 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				092AB4D6231319F100786394 /* GeoSuggestionTests.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		092AB4D823131BE000786394 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				092AB4D22312FA1300786394 /* LocationError.swift */,
+				092AB4DE2313213000786394 /* APIError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		092AB4E02313225B00786394 /* Gateway Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				092AB4E12313226A00786394 /* GeoSuggestionGatewayImplTests.swift */,
+			);
+			path = "Gateway Implementations";
+			sourceTree = "<group>";
+		};
+		092AB4E623132EFC00786394 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				092AB4E723132F0000786394 /* Network */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		092AB4E723132F0000786394 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				092AB4E823132F0500786394 /* Models */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		092AB4E823132F0500786394 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				092AB4E923132F1400786394 /* GeocoderAutocompleteResponseModelTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		09ABAD352311388D00161CBD = {
 			isa = PBXGroup;
 			children = (
 				09ABAD402311388D00161CBD /* ctwTest */,
+				09ABAD6A231138C400161CBD /* ctwTest-Domain */,
+				09D767992311855C00E789CA /* ctwTest-Data */,
 				09ABAD582311388F00161CBD /* ctwTestTests */,
+				09ABAD77231138C400161CBD /* ctwTest-DomainTests */,
+				09D767A62311855C00E789CA /* ctwTest-DataTests */,
 				09ABAD3F2311388D00161CBD /* Products */,
+				E87362C682ECA1F0B0E39324 /* Pods */,
+				B5F90706B672895A464CDBE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +389,10 @@
 			children = (
 				09ABAD3E2311388D00161CBD /* ctwTest.app */,
 				09ABAD552311388F00161CBD /* ctwTestTests.xctest */,
+				09ABAD69231138C400161CBD /* ctwTest_Domain.framework */,
+				09ABAD71231138C400161CBD /* ctwTest-DomainTests.xctest */,
+				09D767982311855B00E789CA /* ctwTest_Data.framework */,
+				09D767A02311855C00E789CA /* ctwTest-DataTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,13 +400,12 @@
 		09ABAD402311388D00161CBD /* ctwTest */ = {
 			isa = PBXGroup;
 			children = (
+				09D76791231182BD00E789CA /* R.generated.swift */,
+				09D7678323117ED800E789CA /* Architecture */,
+				09D76751231143B600E789CA /* Resources */,
+				092AB4C92312F34100786394 /* Utils */,
+				09D7674F2311438D00E789CA /* Interfaces */,
 				09ABAD412311388D00161CBD /* AppDelegate.swift */,
-				09ABAD432311388D00161CBD /* ViewController.swift */,
-				09ABAD452311388D00161CBD /* Main.storyboard */,
-				09ABAD4B2311388F00161CBD /* Assets.xcassets */,
-				09ABAD4D2311388F00161CBD /* LaunchScreen.storyboard */,
-				09ABAD502311388F00161CBD /* Info.plist */,
-				09ABAD482311388D00161CBD /* ctwTest.xcdatamodeld */,
 			);
 			path = ctwTest;
 			sourceTree = "<group>";
@@ -99,20 +419,325 @@
 			path = ctwTestTests;
 			sourceTree = "<group>";
 		};
+		09ABAD6A231138C400161CBD /* ctwTest-Domain */ = {
+			isa = PBXGroup;
+			children = (
+				092AB4D823131BE000786394 /* Errors */,
+				092AB4C42312F06300786394 /* Models */,
+				09D76757231147A200E789CA /* Architecture */,
+				09ABAD8823113A0E00161CBD /* Use Cases */,
+				09D7675C23114A3300E789CA /* Gateways */,
+				09ABAD8723113A0800161CBD /* Entities */,
+				09ABAD6B231138C400161CBD /* ctwTest_Domain.h */,
+				09ABAD6C231138C400161CBD /* Info.plist */,
+			);
+			path = "ctwTest-Domain";
+			sourceTree = "<group>";
+		};
+		09ABAD77231138C400161CBD /* ctwTest-DomainTests */ = {
+			isa = PBXGroup;
+			children = (
+				092AB4D5231319E100786394 /* Entities */,
+				09D767682311523800E789CA /* Use Cases */,
+				09D7676423114F8B00E789CA /* GeneratedMocks.swift */,
+				09ABAD7A231138C400161CBD /* Info.plist */,
+			);
+			path = "ctwTest-DomainTests";
+			sourceTree = "<group>";
+		};
+		09ABAD8723113A0800161CBD /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				09ABAD892311415200161CBD /* GeoSuggestion.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		09ABAD8823113A0E00161CBD /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				09D767522311466900E789CA /* GetGeoSuggestionFromQueryInteractor.swift */,
+				09D767542311468E00E789CA /* GetCurrentLocationInteractor.swift */,
+			);
+			path = "Use Cases";
+			sourceTree = "<group>";
+		};
+		09D7674E2311435400E789CA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				092AB4C12312914100786394 /* Foundation */,
+				09D767752311725F00E789CA /* Cells */,
+				09D767742311722600E789CA /* Modules */,
+				09ABAD4D2311388F00161CBD /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		09D7674F2311438D00E789CA /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				09D76750231143AD00E789CA /* Location */,
+				09D7674E2311435400E789CA /* UI */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		09D76750231143AD00E789CA /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				092AB4D12312F9CA00786394 /* Gateway Implementations */,
+				092AB4CF2312F9C700786394 /* LocationManager.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		09D76751231143B600E789CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				09ABAD4B2311388F00161CBD /* Assets.xcassets */,
+				09ABAD502311388F00161CBD /* Info.plist */,
+				09D7677F23117D4D00E789CA /* Localizable.strings */,
+				09D767D223119EBC00E789CA /* InfoPlist.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		09D76757231147A200E789CA /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				09D76758231147B100E789CA /* Interactor.swift */,
+				09D767662311518B00E789CA /* Entity.swift */,
+				09D767692311562000E789CA /* DomainError.swift */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		09D7675C23114A3300E789CA /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				09D7675D23114A5F00E789CA /* GeoSuggestionGateway.swift */,
+				09D7675F23114A6700E789CA /* LocationGateway.swift */,
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		09D767682311523800E789CA /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				09D7675A231149CE00E789CA /* GetAddressFromQueryInteractorTests.swift */,
+				092AB4DA23131F2100786394 /* GetCurrentLocationInteractorTests.swift */,
+			);
+			path = "Use Cases";
+			sourceTree = "<group>";
+		};
+		09D7676B23115C2100E789CA /* LocationList */ = {
+			isa = PBXGroup;
+			children = (
+				09D7676C23115C3A00E789CA /* LocationListViewController.swift */,
+				09D7676E23115C4300E789CA /* LocationListPresenter.swift */,
+				09D7677023115C4B00E789CA /* LocationListWireframe.swift */,
+				09D7677223115C8000E789CA /* LocationListView.xib */,
+				09D7678123117E8600E789CA /* LocationListConfigurator.swift */,
+			);
+			path = LocationList;
+			sourceTree = "<group>";
+		};
+		09D767742311722600E789CA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				09D7676B23115C2100E789CA /* LocationList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		09D767752311725F00E789CA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				09D767762311727F00E789CA /* LocationTableViewCell.xib */,
+				09D76778231175A000E789CA /* LocationTableViewCell.swift */,
+				09D7677A2311761F00E789CA /* LocationTableViewCellModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		09D7678323117ED800E789CA /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				09D7678623117F7C00E789CA /* Injection */,
+				09D7678423117EEB00E789CA /* Configurator.swift */,
+				09D7678F2311806200E789CA /* Wireframe.swift */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		09D7678623117F7C00E789CA /* Injection */ = {
+			isa = PBXGroup;
+			children = (
+				09D7678723117F8800E789CA /* NetworkConfigurator.swift */,
+				09D7678923117F8F00E789CA /* GatewayConfigurator.swift */,
+				09D7678B23117FA900E789CA /* StorageConfigurator.swift */,
+				09D7678D23117FB200E789CA /* InteractorConfigurator.swift */,
+				092AB4CC2312F70600786394 /* InterfacesConfigurator.swift */,
+			);
+			path = Injection;
+			sourceTree = "<group>";
+		};
+		09D767992311855C00E789CA /* ctwTest-Data */ = {
+			isa = PBXGroup;
+			children = (
+				09D767BC23118A2F00E789CA /* Gateway Implementations */,
+				09D767B5231186FD00E789CA /* Interfaces */,
+				09D7679A2311855C00E789CA /* ctwTest_Data.h */,
+				09D7679B2311855C00E789CA /* Info.plist */,
+			);
+			path = "ctwTest-Data";
+			sourceTree = "<group>";
+		};
+		09D767A62311855C00E789CA /* ctwTest-DataTests */ = {
+			isa = PBXGroup;
+			children = (
+				092AB4E623132EFC00786394 /* Interfaces */,
+				092AB4E02313225B00786394 /* Gateway Implementations */,
+				092AB4E42313249600786394 /* GeneratedMocks.swift */,
+				09D767A92311855C00E789CA /* Info.plist */,
+			);
+			path = "ctwTest-DataTests";
+			sourceTree = "<group>";
+		};
+		09D767B5231186FD00E789CA /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				09D767B72311874D00E789CA /* Network */,
+				09D767B62311874600E789CA /* Storage */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		09D767B62311874600E789CA /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		09D767B72311874D00E789CA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				09D767CB2311921700E789CA /* URLSession */,
+				09D767C823118F8E00E789CA /* Models */,
+				09D767C523118D6100E789CA /* Requests */,
+				09D767B82311889F00E789CA /* APIRequest.swift */,
+				09D767BA231189F000E789CA /* NetworkDispatcher.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		09D767BC23118A2F00E789CA /* Gateway Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				09D767BD23118A7000E789CA /* GeoSuggestionGatewayImpl.swift */,
+			);
+			path = "Gateway Implementations";
+			sourceTree = "<group>";
+		};
+		09D767C523118D6100E789CA /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				09D767C623118E1600E789CA /* GeocodeAutocomplete.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		09D767C823118F8E00E789CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				09D767C923118FB500E789CA /* GeocoderAutocompleteResponseModel.swift */,
+				092AB4C72312F18000786394 /* GeocoderAutocompleteRequestModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		09D767CB2311921700E789CA /* URLSession */ = {
+			isa = PBXGroup;
+			children = (
+				09D767CC2311922700E789CA /* URLSessionClient.swift */,
+			);
+			path = URLSession;
+			sourceTree = "<group>";
+		};
+		B5F90706B672895A464CDBE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C40D628316FCCBA9FF22EDFE /* Pods_ctwTest.framework */,
+				EDABF8FF5E958363398211FA /* Pods_ctwTest_Domain.framework */,
+				33BC9495B72F127E7224A73A /* Pods_ctwTestTests.framework */,
+				0D65FADE69E267DC9B007AB1 /* Pods_ctwTest_Domain_ctwTest_DomainTests.framework */,
+				382DB3E07C685F5ED3336184 /* Pods_ctwTest_Data.framework */,
+				E702123922932D9198E78DA9 /* Pods_ctwTest_Data_ctwTest_DataTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E87362C682ECA1F0B0E39324 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E99ABA50E8D0812A6050D98B /* Pods-ctwTest.debug.xcconfig */,
+				9E2A3516C8CFA7EAA6F3342B /* Pods-ctwTest.release.xcconfig */,
+				9BA32EB985084A6BF2761954 /* Pods-ctwTest-Domain.debug.xcconfig */,
+				433E3C4932432FB044180E47 /* Pods-ctwTest-Domain.release.xcconfig */,
+				B92E26C07363888AE0ECBB0C /* Pods-ctwTest-DomainTests.debug.xcconfig */,
+				80EC126B9FA79D3773D34DE0 /* Pods-ctwTest-DomainTests.release.xcconfig */,
+				7941D8A130462D66D10C70B0 /* Pods-ctwTestTests.debug.xcconfig */,
+				D5DDC835DFF18FCA74A18815 /* Pods-ctwTestTests.release.xcconfig */,
+				D29D200D39BEC0A66E03D2DF /* Pods-ctwTest-Domain-ctwTest-DomainTests.debug.xcconfig */,
+				15387388851E4640335FB111 /* Pods-ctwTest-Domain-ctwTest-DomainTests.release.xcconfig */,
+				16F07008A53F8FD0A36E150B /* Pods-ctwTest-Data.debug.xcconfig */,
+				B5F5CB066F0A570C518C382F /* Pods-ctwTest-Data.release.xcconfig */,
+				8C67EDCFFEBF861AE63A4F0D /* Pods-ctwTest-Data-ctwTest-DataTests.debug.xcconfig */,
+				61AC20D3C66185554651EA8B /* Pods-ctwTest-Data-ctwTest-DataTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		09ABAD64231138C400161CBD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09ABAD7B231138C400161CBD /* ctwTest_Domain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09D767932311855B00E789CA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D767AA2311855C00E789CA /* ctwTest_Data.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		09ABAD3D2311388D00161CBD /* ctwTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09ABAD5E2311388F00161CBD /* Build configuration list for PBXNativeTarget "ctwTest" */;
 			buildPhases = (
+				BECD9B40CE9330F7026089A2 /* [CP] Check Pods Manifest.lock */,
+				09D7677C23117CCB00E789CA /* RSwift */,
 				09ABAD3A2311388D00161CBD /* Sources */,
 				09ABAD3B2311388D00161CBD /* Frameworks */,
 				09ABAD3C2311388D00161CBD /* Resources */,
+				09ABAD83231138C400161CBD /* Embed Frameworks */,
+				77B8F873E13B9B1528C16E33 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				09ABAD7D231138C400161CBD /* PBXTargetDependency */,
+				09D767AC2311855C00E789CA /* PBXTargetDependency */,
 			);
 			name = ctwTest;
 			productName = ctwTest;
@@ -123,9 +748,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09ABAD612311388F00161CBD /* Build configuration list for PBXNativeTarget "ctwTestTests" */;
 			buildPhases = (
+				6BA3E748B970AB1187801AA1 /* [CP] Check Pods Manifest.lock */,
 				09ABAD512311388F00161CBD /* Sources */,
 				09ABAD522311388F00161CBD /* Frameworks */,
 				09ABAD532311388F00161CBD /* Resources */,
+				1E52FD77015887CBE2ED9DEB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -137,13 +764,95 @@
 			productReference = 09ABAD552311388F00161CBD /* ctwTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		09ABAD68231138C400161CBD /* ctwTest-Domain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09ABAD80231138C400161CBD /* Build configuration list for PBXNativeTarget "ctwTest-Domain" */;
+			buildPhases = (
+				476EC885BDAF9B79C0BBEFD7 /* [CP] Check Pods Manifest.lock */,
+				09ABAD64231138C400161CBD /* Headers */,
+				09D7676323114EE200E789CA /* Cuckoo */,
+				09ABAD65231138C400161CBD /* Sources */,
+				09ABAD66231138C400161CBD /* Frameworks */,
+				09ABAD67231138C400161CBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ctwTest-Domain";
+			productName = "ctwTest-Domain";
+			productReference = 09ABAD69231138C400161CBD /* ctwTest_Domain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		09ABAD70231138C400161CBD /* ctwTest-DomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09ABAD84231138C400161CBD /* Build configuration list for PBXNativeTarget "ctwTest-DomainTests" */;
+			buildPhases = (
+				A37FA3F434FDA7FC06593907 /* [CP] Check Pods Manifest.lock */,
+				09ABAD6D231138C400161CBD /* Sources */,
+				09ABAD6E231138C400161CBD /* Frameworks */,
+				09ABAD6F231138C400161CBD /* Resources */,
+				A8DC3DDC2F826E02A18843A2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09ABAD74231138C400161CBD /* PBXTargetDependency */,
+				09ABAD76231138C400161CBD /* PBXTargetDependency */,
+			);
+			name = "ctwTest-DomainTests";
+			productName = "ctwTest-DomainTests";
+			productReference = 09ABAD71231138C400161CBD /* ctwTest-DomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		09D767972311855B00E789CA /* ctwTest-Data */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09D767AF2311855C00E789CA /* Build configuration list for PBXNativeTarget "ctwTest-Data" */;
+			buildPhases = (
+				A3AB148E267986264C04FB54 /* [CP] Check Pods Manifest.lock */,
+				09D767932311855B00E789CA /* Headers */,
+				092AB4E32313242400786394 /* Cuckoo */,
+				09D767942311855B00E789CA /* Sources */,
+				09D767952311855B00E789CA /* Frameworks */,
+				09D767962311855B00E789CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ctwTest-Data";
+			productName = "ctwTest-Data";
+			productReference = 09D767982311855B00E789CA /* ctwTest_Data.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		09D7679F2311855C00E789CA /* ctwTest-DataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09D767B22311855C00E789CA /* Build configuration list for PBXNativeTarget "ctwTest-DataTests" */;
+			buildPhases = (
+				CFCCDB8DCB83CA3A8F119D37 /* [CP] Check Pods Manifest.lock */,
+				09D7679C2311855C00E789CA /* Sources */,
+				09D7679D2311855C00E789CA /* Frameworks */,
+				09D7679E2311855C00E789CA /* Resources */,
+				EF49CC6F317BFB774294E3E2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09D767A32311855C00E789CA /* PBXTargetDependency */,
+				09D767A52311855C00E789CA /* PBXTargetDependency */,
+			);
+			name = "ctwTest-DataTests";
+			productName = "ctwTest-DataTests";
+			productReference = 09D767A02311855C00E789CA /* ctwTest-DataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		09ABAD362311388D00161CBD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = RKM;
 				TargetAttributes = {
@@ -153,6 +862,19 @@
 					09ABAD542311388F00161CBD = {
 						CreatedOnToolsVersion = 10.2.1;
 						TestTargetID = 09ABAD3D2311388D00161CBD;
+					};
+					09ABAD68231138C400161CBD = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+					09ABAD70231138C400161CBD = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					09D767972311855B00E789CA = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					09D7679F2311855C00E789CA = {
+						CreatedOnToolsVersion = 11.0;
 					};
 				};
 			};
@@ -171,6 +893,10 @@
 			targets = (
 				09ABAD3D2311388D00161CBD /* ctwTest */,
 				09ABAD542311388F00161CBD /* ctwTestTests */,
+				09ABAD68231138C400161CBD /* ctwTest-Domain */,
+				09ABAD70231138C400161CBD /* ctwTest-DomainTests */,
+				09D767972311855B00E789CA /* ctwTest-Data */,
+				09D7679F2311855C00E789CA /* ctwTest-DataTests */,
 			);
 		};
 /* End PBXProject section */
@@ -181,8 +907,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				09ABAD4F2311388F00161CBD /* LaunchScreen.storyboard in Resources */,
+				09D767D323119EBC00E789CA /* InfoPlist.strings in Resources */,
+				09D7678023117D4D00E789CA /* Localizable.strings in Resources */,
+				09D7677323115C8000E789CA /* LocationListView.xib in Resources */,
 				09ABAD4C2311388F00161CBD /* Assets.xcassets in Resources */,
-				09ABAD472311388D00161CBD /* Main.storyboard in Resources */,
+				09D767772311728000E789CA /* LocationTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,16 +922,319 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		09ABAD67231138C400161CBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09ABAD6F231138C400161CBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09D767962311855B00E789CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09D7679E2311855C00E789CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		092AB4E32313242400786394 /* Cuckoo */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Cuckoo;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${TARGET_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${TARGET_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${TARGET_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Interfaces/Network/NetworkDispatcher.swift\" \\\n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
+		};
+		09D7676323114EE200E789CA /* Cuckoo */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Cuckoo;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n\n# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${TARGET_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${TARGET_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${TARGET_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Use Cases/GetCurrentLocationInteractor.swift\" \\\n\"${INPUT_DIR}/Use Cases/GetGeoSuggestionFromQueryInteractor.swift\" \\\n\"${INPUT_DIR}/Gateways/GeoSuggestionGateway.swift\" \\\n\"${INPUT_DIR}/Gateways/LocationGateway.swift\"\n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
+		};
+		09D7677C23117CCB00E789CA /* RSwift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = RSwift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		1E52FD77015887CBE2ED9DEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ctwTestTests/Pods-ctwTestTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ctwTestTests/Pods-ctwTestTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ctwTestTests/Pods-ctwTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		476EC885BDAF9B79C0BBEFD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ctwTest-Domain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BA3E748B970AB1187801AA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ctwTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77B8F873E13B9B1528C16E33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ctwTest/Pods-ctwTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ctwTest/Pods-ctwTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ctwTest/Pods-ctwTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A37FA3F434FDA7FC06593907 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ctwTest-Domain-ctwTest-DomainTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3AB148E267986264C04FB54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ctwTest-Data-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8DC3DDC2F826E02A18843A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ctwTest-Domain-ctwTest-DomainTests/Pods-ctwTest-Domain-ctwTest-DomainTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ctwTest-Domain-ctwTest-DomainTests/Pods-ctwTest-Domain-ctwTest-DomainTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ctwTest-Domain-ctwTest-DomainTests/Pods-ctwTest-Domain-ctwTest-DomainTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BECD9B40CE9330F7026089A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ctwTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFCCDB8DCB83CA3A8F119D37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ctwTest-Data-ctwTest-DataTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF49CC6F317BFB774294E3E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ctwTest-Data-ctwTest-DataTests/Pods-ctwTest-Data-ctwTest-DataTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ctwTest-Data-ctwTest-DataTests/Pods-ctwTest-Data-ctwTest-DataTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ctwTest-Data-ctwTest-DataTests/Pods-ctwTest-Data-ctwTest-DataTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		09ABAD3A2311388D00161CBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09ABAD442311388D00161CBD /* ViewController.swift in Sources */,
+				092AB4C0231289AE00786394 /* InteractorConfigurator.swift in Sources */,
+				09D76779231175A000E789CA /* LocationTableViewCell.swift in Sources */,
+				09D76792231182BD00E789CA /* R.generated.swift in Sources */,
+				092AB4C32312914B00786394 /* BaseViewCell.swift in Sources */,
+				092AB4CD2312F70700786394 /* InterfacesConfigurator.swift in Sources */,
+				09D7678523117EEB00E789CA /* Configurator.swift in Sources */,
+				09D767CF23119D8E00E789CA /* LocationGatewayImpl.swift in Sources */,
+				09D7678A23117F8F00E789CA /* GatewayConfigurator.swift in Sources */,
+				09D7678223117E8600E789CA /* LocationListConfigurator.swift in Sources */,
+				09D7678C23117FA900E789CA /* StorageConfigurator.swift in Sources */,
+				09D7678823117F8800E789CA /* NetworkConfigurator.swift in Sources */,
+				092AB4CB2312F35100786394 /* AppError.swift in Sources */,
+				09D7677123115C4B00E789CA /* LocationListWireframe.swift in Sources */,
+				09D767902311806200E789CA /* Wireframe.swift in Sources */,
+				09D7676D23115C3A00E789CA /* LocationListViewController.swift in Sources */,
+				09D7677B2311761F00E789CA /* LocationTableViewCellModel.swift in Sources */,
 				09ABAD422311388D00161CBD /* AppDelegate.swift in Sources */,
-				09ABAD4A2311388D00161CBD /* ctwTest.xcdatamodeld in Sources */,
+				092AB4D02312F9C700786394 /* LocationManager.swift in Sources */,
+				09D7676F23115C4300E789CA /* LocationListPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +1246,60 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		09ABAD65231138C400161CBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D767552311468E00E789CA /* GetCurrentLocationInteractor.swift in Sources */,
+				09D7676023114A6700E789CA /* LocationGateway.swift in Sources */,
+				092AB4D923131C3C00786394 /* LocationError.swift in Sources */,
+				092AB4C62312F06E00786394 /* SuggestionQueryModel.swift in Sources */,
+				09D7675E23114A5F00E789CA /* GeoSuggestionGateway.swift in Sources */,
+				092AB4DF2313213000786394 /* APIError.swift in Sources */,
+				09D767532311466900E789CA /* GetGeoSuggestionFromQueryInteractor.swift in Sources */,
+				09D767672311518B00E789CA /* Entity.swift in Sources */,
+				09D76759231147B100E789CA /* Interactor.swift in Sources */,
+				09ABAD8A2311415200161CBD /* GeoSuggestion.swift in Sources */,
+				09D7676A2311562000E789CA /* DomainError.swift in Sources */,
+				09D7676223114C3C00E789CA /* Location.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09ABAD6D231138C400161CBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				092AB4DB23131F2100786394 /* GetCurrentLocationInteractorTests.swift in Sources */,
+				09D7676523114F8B00E789CA /* GeneratedMocks.swift in Sources */,
+				09D7675B231149CE00E789CA /* GetAddressFromQueryInteractorTests.swift in Sources */,
+				092AB4D7231319F100786394 /* GeoSuggestionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09D767942311855B00E789CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D767C723118E1600E789CA /* GeocodeAutocomplete.swift in Sources */,
+				09D767BF23118C5300E789CA /* APIRequest.swift in Sources */,
+				09D767CA23118FB500E789CA /* GeocoderAutocompleteResponseModel.swift in Sources */,
+				09D767C123118C5C00E789CA /* GeoSuggestionGatewayImpl.swift in Sources */,
+				09D767C023118C5700E789CA /* NetworkDispatcher.swift in Sources */,
+				092AB4C82312F18000786394 /* GeocoderAutocompleteRequestModel.swift in Sources */,
+				09D767CD2311922700E789CA /* URLSessionClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09D7679C2311855C00E789CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				092AB4EA23132F1400786394 /* GeocoderAutocompleteResponseModelTests.swift in Sources */,
+				092AB4E52313249600786394 /* GeneratedMocks.swift in Sources */,
+				092AB4E22313226A00786394 /* GeoSuggestionGatewayImplTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -222,17 +1308,39 @@
 			target = 09ABAD3D2311388D00161CBD /* ctwTest */;
 			targetProxy = 09ABAD562311388F00161CBD /* PBXContainerItemProxy */;
 		};
+		09ABAD74231138C400161CBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09ABAD68231138C400161CBD /* ctwTest-Domain */;
+			targetProxy = 09ABAD73231138C400161CBD /* PBXContainerItemProxy */;
+		};
+		09ABAD76231138C400161CBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09ABAD3D2311388D00161CBD /* ctwTest */;
+			targetProxy = 09ABAD75231138C400161CBD /* PBXContainerItemProxy */;
+		};
+		09ABAD7D231138C400161CBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09ABAD68231138C400161CBD /* ctwTest-Domain */;
+			targetProxy = 09ABAD7C231138C400161CBD /* PBXContainerItemProxy */;
+		};
+		09D767A32311855C00E789CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09D767972311855B00E789CA /* ctwTest-Data */;
+			targetProxy = 09D767A22311855C00E789CA /* PBXContainerItemProxy */;
+		};
+		09D767A52311855C00E789CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09ABAD3D2311388D00161CBD /* ctwTest */;
+			targetProxy = 09D767A42311855C00E789CA /* PBXContainerItemProxy */;
+		};
+		09D767AC2311855C00E789CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09D767972311855B00E789CA /* ctwTest-Data */;
+			targetProxy = 09D767AB2311855C00E789CA /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		09ABAD452311388D00161CBD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				09ABAD462311388D00161CBD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		09ABAD4D2311388F00161CBD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -362,11 +1470,13 @@
 		};
 		09ABAD5F2311388F00161CBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E99ABA50E8D0812A6050D98B /* Pods-ctwTest.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D5C75HG392;
-				INFOPLIST_FILE = ctwTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ctwTest/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,11 +1490,13 @@
 		};
 		09ABAD602311388F00161CBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E2A3516C8CFA7EAA6F3342B /* Pods-ctwTest.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D5C75HG392;
-				INFOPLIST_FILE = ctwTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ctwTest/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,8 +1510,9 @@
 		};
 		09ABAD622311388F00161CBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7941D8A130462D66D10C70B0 /* Pods-ctwTestTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D5C75HG392;
@@ -419,8 +1532,9 @@
 		};
 		09ABAD632311388F00161CBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5DDC835DFF18FCA74A18815 /* Pods-ctwTestTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D5C75HG392;
@@ -435,6 +1549,207 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ctwTest.app/ctwTest";
+			};
+			name = Release;
+		};
+		09ABAD81231138C400161CBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BA32EB985084A6BF2761954 /* Pods-ctwTest-Domain.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D5C75HG392;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "ctwTest-Domain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rkm.ctwTest-Domain";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		09ABAD82231138C400161CBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 433E3C4932432FB044180E47 /* Pods-ctwTest-Domain.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D5C75HG392;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "ctwTest-Domain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rkm.ctwTest-Domain";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		09ABAD85231138C400161CBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D29D200D39BEC0A66E03D2DF /* Pods-ctwTest-Domain-ctwTest-DomainTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D5C75HG392;
+				INFOPLIST_FILE = "ctwTest-DomainTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rkm.ctwTest-DomainTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09ABAD86231138C400161CBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15387388851E4640335FB111 /* Pods-ctwTest-Domain-ctwTest-DomainTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D5C75HG392;
+				INFOPLIST_FILE = "ctwTest-DomainTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rkm.ctwTest-DomainTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		09D767B02311855C00E789CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16F07008A53F8FD0A36E150B /* Pods-ctwTest-Data.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D5C75HG392;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "ctwTest-Data/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rkm.ctwTest-Data";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		09D767B12311855C00E789CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5F5CB066F0A570C518C382F /* Pods-ctwTest-Data.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D5C75HG392;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "ctwTest-Data/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rkm.ctwTest-Data";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		09D767B32311855C00E789CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C67EDCFFEBF861AE63A4F0D /* Pods-ctwTest-Data-ctwTest-DataTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D5C75HG392;
+				INFOPLIST_FILE = "ctwTest-DataTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rkm.ctwTest-DataTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09D767B42311855C00E789CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61AC20D3C66185554651EA8B /* Pods-ctwTest-Data-ctwTest-DataTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D5C75HG392;
+				INFOPLIST_FILE = "ctwTest-DataTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rkm.ctwTest-DataTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -468,20 +1783,43 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-/* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		09ABAD482311388D00161CBD /* ctwTest.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				09ABAD492311388D00161CBD /* ctwTest.xcdatamodel */,
+		09ABAD80231138C400161CBD /* Build configuration list for PBXNativeTarget "ctwTest-Domain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09ABAD81231138C400161CBD /* Debug */,
+				09ABAD82231138C400161CBD /* Release */,
 			);
-			currentVersion = 09ABAD492311388D00161CBD /* ctwTest.xcdatamodel */;
-			path = ctwTest.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-/* End XCVersionGroup section */
+		09ABAD84231138C400161CBD /* Build configuration list for PBXNativeTarget "ctwTest-DomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09ABAD85231138C400161CBD /* Debug */,
+				09ABAD86231138C400161CBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09D767AF2311855C00E789CA /* Build configuration list for PBXNativeTarget "ctwTest-Data" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09D767B02311855C00E789CA /* Debug */,
+				09D767B12311855C00E789CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09D767B22311855C00E789CA /* Build configuration list for PBXNativeTarget "ctwTest-DataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09D767B32311855C00E789CA /* Debug */,
+				09D767B42311855C00E789CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
 	};
 	rootObject = 09ABAD362311388D00161CBD /* Project object */;
 }
