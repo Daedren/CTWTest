@@ -19,6 +19,7 @@ class LocationListPresenter {
     var getAddress: GetGeoSuggestionFromQueryInteractor
     
     var cells = BehaviorRelay<[LocationTableViewCellModel]>(value: [])
+    var suggestions = [GeoSuggestion]()
     var currentLocation: Location?
     
     init(router: LocationListWireframe,
@@ -31,6 +32,7 @@ class LocationListPresenter {
     
     func configure(
         searchText: Observable<String?>,
+        didTapCell: Observable<IndexPath>,
         disposeBag: DisposeBag) ->
         (Driver<[LocationTableViewCellModel]>){
             
@@ -43,8 +45,15 @@ class LocationListPresenter {
                     // The first location is the most current one
                     self?.currentLocation = nextLocation.first
                 }, onError: { err in
-                    
                 }).disposed(by: disposeBag)
+            
+            didTapCell.subscribe(onNext: { [weak self] indexPath in
+                if let suggestions = self?.suggestions,
+                    suggestions.count > indexPath.row,
+                    indexPath.row >= 0 {
+                    self?.router.goToDetail(of: suggestions[indexPath.row])
+                }
+            }).disposed(by: disposeBag)
 
             return cells.asDriver()
     }
@@ -58,6 +67,7 @@ class LocationListPresenter {
         let model = SuggestionQueryModel(query: query, location: self.currentLocation)
         getAddress.execute(for: model)
             .subscribe(onSuccess: { [weak self] suggestions in
+                self?.suggestions = suggestions
                 var newCells = [LocationTableViewCellModel]()
                 for address in suggestions {
                     let model = LocationTableViewCellModel(from: address)

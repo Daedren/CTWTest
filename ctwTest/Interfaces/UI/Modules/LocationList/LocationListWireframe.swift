@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import ctwTest_Domain
 
 class LocationListWireframe: Wireframe {
     typealias ViewType = LocationListViewController
@@ -14,5 +15,13 @@ class LocationListWireframe: Wireframe {
     
     init(view: LocationListViewController) {
         self.source = view
+    }
+    
+    // Entities really shouldn't be tossed around like this.
+    // Instead the parameter should be an unique identifier and a use case would then provide the Presenter with what it wants.
+    // But for brevity's sake ..
+    func goToDetail(of detail: GeoSuggestion) {
+        let viewc = LocationDetailConfigurator().configure(for: detail)
+        self.present(viewController: viewc)
     }
 }

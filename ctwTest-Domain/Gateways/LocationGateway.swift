@@ -11,4 +11,5 @@ import RxSwift
 
 public protocol LocationGateway {
     func getCurrentLocation() -> Single<[Location]>
+    func geocode(address: String) -> Single<[Location]>
 }

@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: ctwTest-Data/Interfaces/Network/NetworkDispatcher.swift at 2019-08-25 21:19:59 +0000
+// MARK: - Mocks generated from file: ctwTest-Data/Interfaces/Network/NetworkDispatcher.swift at 2019-08-26 00:39:34 +0000
 
 //
 //  NetworkDispatcher.swift

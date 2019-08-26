@@ -22,5 +22,10 @@ class InteractorConfigurator: Assembly {
             return GetCurrentLocationInteractor(gateway:
                 container.resolve(LocationGatewayImpl.self)!
         )}
+        
+        container.register(GeocodeAddressInteractor.self) { _ in
+            return GeocodeAddressInteractor(gateway:
+                container.resolve(LocationGatewayImpl.self)!
+            )}
     }
 }

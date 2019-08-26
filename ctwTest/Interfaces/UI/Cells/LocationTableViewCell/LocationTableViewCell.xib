@@ -9,30 +9,30 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LocationTableViewCell" rowHeight="89" id="Z6E-N5-wq0" customClass="LocationTableViewCell" customModule="ctwTest" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="89"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LocationTableViewCell" rowHeight="263" id="Z6E-N5-wq0" customClass="LocationTableViewCell" customModule="ctwTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="-113" width="414" height="263"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z6E-N5-wq0" id="5Sl-RQ-bYX">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="89"/>
+                <rect key="frame" x="0.0" y="0.0" width="414" height="263"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="b6B-N6-Lnf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="89"/>
+                        <rect key="frame" x="20" y="11" width="374" height="241"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUe-it-djU">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="34.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="93"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1d-2U-wGO">
-                                <rect key="frame" x="0.0" y="34.5" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="93" width="374" height="82"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NI-yr-NkF">
-                                <rect key="frame" x="0.0" y="64.5" width="414" height="24.5"/>
+                                <rect key="frame" x="0.0" y="175" width="374" height="66"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -41,20 +41,18 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="b6B-N6-Lnf" firstAttribute="top" secondItem="5Sl-RQ-bYX" secondAttribute="top" id="HUa-Bg-OEP"/>
-                    <constraint firstItem="b6B-N6-Lnf" firstAttribute="leading" secondItem="5Sl-RQ-bYX" secondAttribute="leading" id="VqW-zS-GDN"/>
-                    <constraint firstAttribute="bottom" secondItem="b6B-N6-Lnf" secondAttribute="bottom" id="pDR-3v-1Fv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="b6B-N6-Lnf" secondAttribute="trailing" id="alF-pa-cfr"/>
+                    <constraint firstItem="b6B-N6-Lnf" firstAttribute="leading" secondItem="5Sl-RQ-bYX" secondAttribute="leadingMargin" id="guM-hp-lfd"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="b6B-N6-Lnf" secondAttribute="bottom" id="p4W-bY-KNZ"/>
+                    <constraint firstItem="b6B-N6-Lnf" firstAttribute="top" secondItem="5Sl-RQ-bYX" secondAttribute="topMargin" id="uLt-d8-VrP"/>
                 </constraints>
             </tableViewCellContentView>
-            <constraints>
-                <constraint firstItem="b6B-N6-Lnf" firstAttribute="width" secondItem="Z6E-N5-wq0" secondAttribute="width" id="HY5-GW-eUz"/>
-            </constraints>
             <connections>
                 <outlet property="captionLabel" destination="1NI-yr-NkF" id="dES-u3-y7A"/>
                 <outlet property="mainLabel" destination="NUe-it-djU" id="vVd-Zc-HcW"/>
                 <outlet property="subLabel" destination="g1d-2U-wGO" id="UxD-aI-Hga"/>
             </connections>
-            <point key="canvasLocation" x="244.92753623188409" y="-38.504464285714285"/>
+            <point key="canvasLocation" x="244.92753623188409" y="19.754464285714285"/>
         </tableViewCell>
     </objects>
 </document>

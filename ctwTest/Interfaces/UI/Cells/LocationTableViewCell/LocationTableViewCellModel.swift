@@ -20,7 +20,7 @@ struct LocationTableViewCellModel {
         
         if let distance = suggestion.distance, distance >= 0.0 {
             
-            let distanceString = LocationTableViewCellModel.createDistanceString(from: distance)
+            let distanceString = Formatter.createDistanceString(from: distance)
             caption = R.string.localizable.location_cell_distance(distanceString)
         }
         else {
@@ -28,15 +28,4 @@ struct LocationTableViewCellModel {
         }
     }
     
-    private static func createDistanceString(from distance: Double) -> String {
-        var distanceString = ""
-        
-        if distance > 1000 {
-            distanceString = "\(distance / 1000) km"
-        }
-        else {
-            distanceString = "\(distance) m"
-        }
-        return distanceString
-    }
 }

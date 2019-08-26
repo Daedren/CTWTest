@@ -16,12 +16,22 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 2 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 4 nibs.
   struct nib {
+    /// Nib `LocationDetailView`.
+    static let locationDetailView = _R.nib._LocationDetailView()
     /// Nib `LocationListView`.
     static let locationListView = _R.nib._LocationListView()
     /// Nib `LocationTableViewCell`.
     static let locationTableViewCell = _R.nib._LocationTableViewCell()
+    /// Nib `TitleSubtitleTableViewCell`.
+    static let titleSubtitleTableViewCell = _R.nib._TitleSubtitleTableViewCell()
+    
+    /// `UINib(name: "LocationDetailView", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.locationDetailView) instead")
+    static func locationDetailView(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.locationDetailView)
+    }
     
     /// `UINib(name: "LocationListView", in: bundle)`
     @available(*, deprecated, message: "Use UINib(resource: R.nib.locationListView) instead")
@@ -35,12 +45,26 @@ struct R: Rswift.Validatable {
       return UIKit.UINib(resource: R.nib.locationTableViewCell)
     }
     
+    /// `UINib(name: "TitleSubtitleTableViewCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.titleSubtitleTableViewCell) instead")
+    static func titleSubtitleTableViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.titleSubtitleTableViewCell)
+    }
+    
+    static func locationDetailView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.locationDetailView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+    
     static func locationListView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.locationListView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
     
     static func locationTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> LocationTableViewCell? {
       return R.nib.locationTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? LocationTableViewCell
+    }
+    
+    static func titleSubtitleTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> TitleSubtitleTableViewCell? {
+      return R.nib.titleSubtitleTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? TitleSubtitleTableViewCell
     }
     
     fileprivate init() {}
@@ -82,14 +106,32 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    /// This `R.string.localizable` struct is generated, and contains static references to 3 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 7 localization keys.
     struct localizable {
+      /// Value: Coordinates
+      static let location_detail_coordinates = Rswift.StringResource(key: "location_detail_coordinates", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Distance
+      static let location_detail_distance = Rswift.StringResource(key: "location_detail_distance", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Distance: %@
       static let location_cell_distance = Rswift.StringResource(key: "location_cell_distance", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Locations
       static let location_title = Rswift.StringResource(key: "location_title", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Postal Code
+      static let location_detail_postalCode = Rswift.StringResource(key: "location_detail_postalCode", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Search locations
       static let location_search_placeholder = Rswift.StringResource(key: "location_search_placeholder", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Street
+      static let location_detail_street = Rswift.StringResource(key: "location_detail_street", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      
+      /// Value: Coordinates
+      static func location_detail_coordinates(_: Void = ()) -> String {
+        return NSLocalizedString("location_detail_coordinates", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// Value: Distance
+      static func location_detail_distance(_: Void = ()) -> String {
+        return NSLocalizedString("location_detail_distance", bundle: R.hostingBundle, comment: "")
+      }
       
       /// Value: Distance: %@
       static func location_cell_distance(_ value1: String) -> String {
@@ -101,9 +143,19 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("location_title", bundle: R.hostingBundle, comment: "")
       }
       
+      /// Value: Postal Code
+      static func location_detail_postalCode(_: Void = ()) -> String {
+        return NSLocalizedString("location_detail_postalCode", bundle: R.hostingBundle, comment: "")
+      }
+      
       /// Value: Search locations
       static func location_search_placeholder(_: Void = ()) -> String {
         return NSLocalizedString("location_search_placeholder", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// Value: Street
+      static func location_detail_street(_: Void = ()) -> String {
+        return NSLocalizedString("location_detail_street", bundle: R.hostingBundle, comment: "")
       }
       
       fileprivate init() {}
@@ -131,6 +183,17 @@ struct _R: Rswift.Validatable {
   }
   
   struct nib {
+    struct _LocationDetailView: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "LocationDetailView"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+      
+      fileprivate init() {}
+    }
+    
     struct _LocationListView: Rswift.NibResourceType {
       let bundle = R.hostingBundle
       let name = "LocationListView"
@@ -151,6 +214,17 @@ struct _R: Rswift.Validatable {
       
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> LocationTableViewCell? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? LocationTableViewCell
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _TitleSubtitleTableViewCell: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "TitleSubtitleTableViewCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> TitleSubtitleTableViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? TitleSubtitleTableViewCell
       }
       
       fileprivate init() {}

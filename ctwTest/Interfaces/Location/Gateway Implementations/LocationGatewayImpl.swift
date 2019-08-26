@@ -25,6 +25,21 @@ class LocationGatewayImpl: LocationGateway {
                 return Single.just(result.map{ Location(latitude: $0.coordinate.latitude, longitude: $0.coordinate.longitude)})
         }
     }
-
+    
+    func geocode(address: String) -> Single<[Location]> {
+        return self.manager.geocode(address: address)
+            .flatMap{ result -> Single<[Location]> in
+                if let result = result {
+                    return Single.just(result.compactMap{
+                        if let location = $0.location {
+                            return Location(latitude: location.coordinate.latitude,
+                                            longitude: location.coordinate.longitude)
+                        }
+                        return nil
+                    })
+                }
+                return Single.error(LocationError.locationNotFound)
+        }
+    }
 }
 

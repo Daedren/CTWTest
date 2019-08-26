@@ -9,3 +9,7 @@
 "location_cell_distance" = "Distance: %@";
 "location_title" = "Locations";
 "location_search_placeholder" = "Search locations";
+"location_detail_street" = "Street";
+"location_detail_postalCode" = "Postal Code";
+"location_detail_coordinates" = "Coordinates";
+"location_detail_distance" = "Distance";

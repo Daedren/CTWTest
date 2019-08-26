@@ -15,8 +15,10 @@ import RxSwift
 class LocationManager: NSObject, CLLocationManagerDelegate {
     
     var manager = CLLocationManager()
+    let geocoder = CLGeocoder()
+    
     var locations = PublishSubject<[CLLocation]>()
-
+    
     func initManager() throws {
         let authorizationStatus = CLLocationManager.authorizationStatus()
         if authorizationStatus == .notDetermined {
@@ -44,7 +46,21 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         }
     }
     
-
+    public func geocode(address: String) -> Single<[CLPlacemark]?> {
+        return Single.create { event in
+            self.geocoder.geocodeAddressString(address, completionHandler: { (response, error) in
+                if let error = error {
+                    event(.error(error))
+                }
+                else {
+                    event(.success(response))
+                }
+            })
+            return Disposables.create()
+        }
+    }
+    
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         self.locations.onNext(locations)
         self.locations.onCompleted()

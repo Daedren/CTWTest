@@ -12,4 +12,5 @@ public enum LocationError: Error, Equatable {
     case deinitialized
     case notAuthorized
     case notAvailable
+    case locationNotFound
 }

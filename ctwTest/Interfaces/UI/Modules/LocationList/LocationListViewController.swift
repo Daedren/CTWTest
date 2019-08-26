@@ -23,12 +23,10 @@ class LocationListViewController: UIViewController {
     
     override func viewDidLoad() {
         configureView()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
         configurePresenter()
     }
     
+
     func configureView() {
         // MARK: TableView
         self.tableView.register(UINib(resource: R.nib.locationTableViewCell),
@@ -48,6 +46,7 @@ class LocationListViewController: UIViewController {
     
     func configurePresenter() {
         let result = presenter.configure(searchText: self.searchedText.distinctUntilChanged().asObservable(),
+                                         didTapCell: self.tableView.rx.itemSelected.asObservable(),
                                          disposeBag: self.disposeBag)
         
         result
@@ -56,9 +55,6 @@ class LocationListViewController: UIViewController {
             }
             .disposed(by: self.disposeBag)
 
-        //        result.drive(onNext: { cells in
-        //
-        //        }).disposed(by: self.disposeBag)
     }
     
 }

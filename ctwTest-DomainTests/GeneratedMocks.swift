@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: ctwTest-Domain/Gateways/GeoSuggestionGateway.swift at 2019-08-25 21:19:58 +0000
+// MARK: - Mocks generated from file: ctwTest-Domain/Gateways/GeoSuggestionGateway.swift at 2019-08-26 00:39:34 +0000
 
 //
 //  GeoSuggestionGateway.swift
@@ -105,7 +105,7 @@ public class GeoSuggestionGatewayStub: GeoSuggestionGateway {
 }
 
 
-// MARK: - Mocks generated from file: ctwTest-Domain/Gateways/LocationGateway.swift at 2019-08-25 21:19:58 +0000
+// MARK: - Mocks generated from file: ctwTest-Domain/Gateways/LocationGateway.swift at 2019-08-26 00:39:34 +0000
 
 //
 //  LocationGateway.swift
@@ -160,6 +160,21 @@ public class MockLocationGateway: LocationGateway, Cuckoo.ProtocolMock {
         
     }
     
+    
+    
+    public func geocode(address: String) -> Single<[Location]> {
+        
+    return cuckoo_manager.call("geocode(address: String) -> Single<[Location]>",
+            parameters: (address),
+            escapingParameters: (address),
+            superclassCall:
+                
+                Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                ,
+            defaultCall: __defaultImplStub!.geocode(address: address))
+        
+    }
+    
 
 	public struct __StubbingProxy_LocationGateway: Cuckoo.StubbingProxy {
 	    private let cuckoo_manager: Cuckoo.MockManager
@@ -172,6 +187,11 @@ public class MockLocationGateway: LocationGateway, Cuckoo.ProtocolMock {
 	    func getCurrentLocation() -> Cuckoo.ProtocolStubFunction<(), Single<[Location]>> {
 	        let matchers: [Cuckoo.ParameterMatcher<Void>] = []
 	        return .init(stub: cuckoo_manager.createStub(for: MockLocationGateway.self, method: "getCurrentLocation() -> Single<[Location]>", parameterMatchers: matchers))
+	    }
+	    
+	    func geocode<M1: Cuckoo.Matchable>(address: M1) -> Cuckoo.ProtocolStubFunction<(String), Single<[Location]>> where M1.MatchedType == String {
+	        let matchers: [Cuckoo.ParameterMatcher<(String)>] = [wrap(matchable: address) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockLocationGateway.self, method: "geocode(address: String) -> Single<[Location]>", parameterMatchers: matchers))
 	    }
 	    
 	}
@@ -196,6 +216,12 @@ public class MockLocationGateway: LocationGateway, Cuckoo.ProtocolMock {
 	        return cuckoo_manager.verify("getCurrentLocation() -> Single<[Location]>", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
 	    }
 	    
+	    @discardableResult
+	    func geocode<M1: Cuckoo.Matchable>(address: M1) -> Cuckoo.__DoNotUse<(String), Single<[Location]>> where M1.MatchedType == String {
+	        let matchers: [Cuckoo.ParameterMatcher<(String)>] = [wrap(matchable: address) { $0 }]
+	        return cuckoo_manager.verify("geocode(address: String) -> Single<[Location]>", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
 	}
 }
 
@@ -209,10 +235,14 @@ public class LocationGatewayStub: LocationGateway {
         return DefaultValueRegistry.defaultValue(for: (Single<[Location]>).self)
     }
     
+    public func geocode(address: String) -> Single<[Location]>  {
+        return DefaultValueRegistry.defaultValue(for: (Single<[Location]>).self)
+    }
+    
 }
 
 
-// MARK: - Mocks generated from file: ctwTest-Domain/Use Cases/GetCurrentLocationInteractor.swift at 2019-08-25 21:19:58 +0000
+// MARK: - Mocks generated from file: ctwTest-Domain/Use Cases/GetCurrentLocationInteractor.swift at 2019-08-26 00:39:34 +0000
 
 //
 //  GetCurrentLocationInteractor.swift
@@ -363,7 +393,7 @@ public class GetCurrentLocationInteractorStub: GetCurrentLocationInteractor {
 }
 
 
-// MARK: - Mocks generated from file: ctwTest-Domain/Use Cases/GetGeoSuggestionFromQueryInteractor.swift at 2019-08-25 21:19:58 +0000
+// MARK: - Mocks generated from file: ctwTest-Domain/Use Cases/GetGeoSuggestionFromQueryInteractor.swift at 2019-08-26 00:39:34 +0000
 
 //
 //  GetGeoSuggestionFromQueryInteractor.swift

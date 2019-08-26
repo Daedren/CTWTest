@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		00CC593196E6472B1D1BE617 /* Pods_ctwTest_Data_ctwTest_DataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E702123922932D9198E78DA9 /* Pods_ctwTest_Data_ctwTest_DataTests.framework */; };
+		0910839323133E4C00BCF03B /* LocationDetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910839223133E4C00BCF03B /* LocationDetailConfigurator.swift */; };
+		09108395231341F400BCF03B /* TitleSubtitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09108394231341F400BCF03B /* TitleSubtitleTableViewCell.swift */; };
+		091083992313421600BCF03B /* TitleSubtitleTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091083982313421600BCF03B /* TitleSubtitleTableViewCellModel.swift */; };
+		0910839B2313422100BCF03B /* TitleSubtitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0910839A2313422100BCF03B /* TitleSubtitleTableViewCell.xib */; };
+		0910839D2313495900BCF03B /* GeocodeAddressInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910839C2313495900BCF03B /* GeocodeAddressInteractor.swift */; };
+		091083A023134F1A00BCF03B /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910839F23134F1A00BCF03B /* Formatter.swift */; };
 		092AB4C0231289AE00786394 /* InteractorConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7678D23117FB200E789CA /* InteractorConfigurator.swift */; };
 		092AB4C32312914B00786394 /* BaseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092AB4C22312914B00786394 /* BaseViewCell.swift */; };
 		092AB4C62312F06E00786394 /* SuggestionQueryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092AB4C52312F06E00786394 /* SuggestionQueryModel.swift */; };
@@ -22,10 +28,12 @@
 		092AB4E22313226A00786394 /* GeoSuggestionGatewayImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092AB4E12313226A00786394 /* GeoSuggestionGatewayImplTests.swift */; };
 		092AB4E52313249600786394 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092AB4E42313249600786394 /* GeneratedMocks.swift */; };
 		092AB4EA23132F1400786394 /* GeocoderAutocompleteResponseModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092AB4E923132F1400786394 /* GeocoderAutocompleteResponseModelTests.swift */; };
+		092AB4ED231333AC00786394 /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092AB4EC231333AC00786394 /* LocationDetailViewController.swift */; };
+		092AB4EF2313349100786394 /* LocationDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092AB4EE2313349100786394 /* LocationDetailPresenter.swift */; };
+		092AB4F323133AC700786394 /* LocationDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 092AB4F223133AC700786394 /* LocationDetailView.xib */; };
 		09ABAD422311388D00161CBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ABAD412311388D00161CBD /* AppDelegate.swift */; };
 		09ABAD4C2311388F00161CBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09ABAD4B2311388F00161CBD /* Assets.xcassets */; };
 		09ABAD4F2311388F00161CBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09ABAD4D2311388F00161CBD /* LaunchScreen.storyboard */; };
-		09ABAD5A2311388F00161CBD /* ctwTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ABAD592311388F00161CBD /* ctwTestTests.swift */; };
 		09ABAD72231138C400161CBD /* ctwTest_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABAD69231138C400161CBD /* ctwTest_Domain.framework */; };
 		09ABAD7B231138C400161CBD /* ctwTest_Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 09ABAD6B231138C400161CBD /* ctwTest_Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09ABAD7E231138C400161CBD /* ctwTest_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABAD69231138C400161CBD /* ctwTest_Domain.framework */; };
@@ -143,6 +151,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0910839223133E4C00BCF03B /* LocationDetailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailConfigurator.swift; sourceTree = "<group>"; };
+		09108394231341F400BCF03B /* TitleSubtitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleTableViewCell.swift; sourceTree = "<group>"; };
+		091083982313421600BCF03B /* TitleSubtitleTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleTableViewCellModel.swift; sourceTree = "<group>"; };
+		0910839A2313422100BCF03B /* TitleSubtitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleSubtitleTableViewCell.xib; sourceTree = "<group>"; };
+		0910839C2313495900BCF03B /* GeocodeAddressInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodeAddressInteractor.swift; sourceTree = "<group>"; };
+		0910839F23134F1A00BCF03B /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		092AB4C22312914B00786394 /* BaseViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewCell.swift; sourceTree = "<group>"; };
 		092AB4C52312F06E00786394 /* SuggestionQueryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionQueryModel.swift; sourceTree = "<group>"; };
 		092AB4C72312F18000786394 /* GeocoderAutocompleteRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocoderAutocompleteRequestModel.swift; sourceTree = "<group>"; };
@@ -156,13 +170,15 @@
 		092AB4E12313226A00786394 /* GeoSuggestionGatewayImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSuggestionGatewayImplTests.swift; sourceTree = "<group>"; };
 		092AB4E42313249600786394 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		092AB4E923132F1400786394 /* GeocoderAutocompleteResponseModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocoderAutocompleteResponseModelTests.swift; sourceTree = "<group>"; };
+		092AB4EC231333AC00786394 /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
+		092AB4EE2313349100786394 /* LocationDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailPresenter.swift; sourceTree = "<group>"; };
+		092AB4F223133AC700786394 /* LocationDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationDetailView.xib; sourceTree = "<group>"; };
 		09ABAD3E2311388D00161CBD /* ctwTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ctwTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09ABAD412311388D00161CBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09ABAD4B2311388F00161CBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09ABAD4E2311388F00161CBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09ABAD502311388F00161CBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09ABAD552311388F00161CBD /* ctwTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ctwTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		09ABAD592311388F00161CBD /* ctwTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ctwTestTests.swift; sourceTree = "<group>"; };
 		09ABAD5B2311388F00161CBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09ABAD69231138C400161CBD /* ctwTest_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ctwTest_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09ABAD6B231138C400161CBD /* ctwTest_Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ctwTest_Domain.h; sourceTree = "<group>"; };
@@ -287,6 +303,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09108396231341FA00BCF03B /* LocationTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				09D767762311727F00E789CA /* LocationTableViewCell.xib */,
+				09D76778231175A000E789CA /* LocationTableViewCell.swift */,
+				09D7677A2311761F00E789CA /* LocationTableViewCellModel.swift */,
+			);
+			path = LocationTableViewCell;
+			sourceTree = "<group>";
+		};
+		091083972313420400BCF03B /* TitleSubtitleTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				09108394231341F400BCF03B /* TitleSubtitleTableViewCell.swift */,
+				091083982313421600BCF03B /* TitleSubtitleTableViewCellModel.swift */,
+				0910839A2313422100BCF03B /* TitleSubtitleTableViewCell.xib */,
+			);
+			path = TitleSubtitleTableViewCell;
+			sourceTree = "<group>";
+		};
+		0910839E23134F0E00BCF03B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0910839F23134F1A00BCF03B /* Formatter.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		092AB4C12312914100786394 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +413,17 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		092AB4EB2313339E00786394 /* LocationDetail */ = {
+			isa = PBXGroup;
+			children = (
+				092AB4EC231333AC00786394 /* LocationDetailViewController.swift */,
+				092AB4EE2313349100786394 /* LocationDetailPresenter.swift */,
+				092AB4F223133AC700786394 /* LocationDetailView.xib */,
+				0910839223133E4C00BCF03B /* LocationDetailConfigurator.swift */,
+			);
+			path = LocationDetail;
+			sourceTree = "<group>";
+		};
 		09ABAD352311388D00161CBD = {
 			isa = PBXGroup;
 			children = (
@@ -413,7 +468,6 @@
 		09ABAD582311388F00161CBD /* ctwTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				09ABAD592311388F00161CBD /* ctwTestTests.swift */,
 				09ABAD5B2311388F00161CBD /* Info.plist */,
 			);
 			path = ctwTestTests;
@@ -458,6 +512,7 @@
 			children = (
 				09D767522311466900E789CA /* GetGeoSuggestionFromQueryInteractor.swift */,
 				09D767542311468E00E789CA /* GetCurrentLocationInteractor.swift */,
+				0910839C2313495900BCF03B /* GeocodeAddressInteractor.swift */,
 			);
 			path = "Use Cases";
 			sourceTree = "<group>";
@@ -465,6 +520,7 @@
 		09D7674E2311435400E789CA /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				0910839E23134F0E00BCF03B /* Utils */,
 				092AB4C12312914100786394 /* Foundation */,
 				09D767752311725F00E789CA /* Cells */,
 				09D767742311722600E789CA /* Modules */,
@@ -545,6 +601,7 @@
 		09D767742311722600E789CA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				092AB4EB2313339E00786394 /* LocationDetail */,
 				09D7676B23115C2100E789CA /* LocationList */,
 			);
 			path = Modules;
@@ -553,9 +610,8 @@
 		09D767752311725F00E789CA /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				09D767762311727F00E789CA /* LocationTableViewCell.xib */,
-				09D76778231175A000E789CA /* LocationTableViewCell.swift */,
-				09D7677A2311761F00E789CA /* LocationTableViewCellModel.swift */,
+				091083972313420400BCF03B /* TitleSubtitleTableViewCell */,
+				09108396231341FA00BCF03B /* LocationTableViewCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -906,11 +962,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0910839B2313422100BCF03B /* TitleSubtitleTableViewCell.xib in Resources */,
 				09ABAD4F2311388F00161CBD /* LaunchScreen.storyboard in Resources */,
 				09D767D323119EBC00E789CA /* InfoPlist.strings in Resources */,
 				09D7678023117D4D00E789CA /* Localizable.strings in Resources */,
 				09D7677323115C8000E789CA /* LocationListView.xib in Resources */,
 				09ABAD4C2311388F00161CBD /* Assets.xcassets in Resources */,
+				092AB4F323133AC700786394 /* LocationDetailView.xib in Resources */,
 				09D767772311728000E789CA /* LocationTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1216,19 +1274,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				091083A023134F1A00BCF03B /* Formatter.swift in Sources */,
 				092AB4C0231289AE00786394 /* InteractorConfigurator.swift in Sources */,
 				09D76779231175A000E789CA /* LocationTableViewCell.swift in Sources */,
 				09D76792231182BD00E789CA /* R.generated.swift in Sources */,
 				092AB4C32312914B00786394 /* BaseViewCell.swift in Sources */,
+				092AB4ED231333AC00786394 /* LocationDetailViewController.swift in Sources */,
 				092AB4CD2312F70700786394 /* InterfacesConfigurator.swift in Sources */,
+				09108395231341F400BCF03B /* TitleSubtitleTableViewCell.swift in Sources */,
 				09D7678523117EEB00E789CA /* Configurator.swift in Sources */,
 				09D767CF23119D8E00E789CA /* LocationGatewayImpl.swift in Sources */,
+				0910839323133E4C00BCF03B /* LocationDetailConfigurator.swift in Sources */,
+				091083992313421600BCF03B /* TitleSubtitleTableViewCellModel.swift in Sources */,
 				09D7678A23117F8F00E789CA /* GatewayConfigurator.swift in Sources */,
 				09D7678223117E8600E789CA /* LocationListConfigurator.swift in Sources */,
 				09D7678C23117FA900E789CA /* StorageConfigurator.swift in Sources */,
 				09D7678823117F8800E789CA /* NetworkConfigurator.swift in Sources */,
 				092AB4CB2312F35100786394 /* AppError.swift in Sources */,
 				09D7677123115C4B00E789CA /* LocationListWireframe.swift in Sources */,
+				092AB4EF2313349100786394 /* LocationDetailPresenter.swift in Sources */,
 				09D767902311806200E789CA /* Wireframe.swift in Sources */,
 				09D7676D23115C3A00E789CA /* LocationListViewController.swift in Sources */,
 				09D7677B2311761F00E789CA /* LocationTableViewCellModel.swift in Sources */,
@@ -1242,7 +1306,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09ABAD5A2311388F00161CBD /* ctwTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1256,6 +1319,7 @@
 				092AB4C62312F06E00786394 /* SuggestionQueryModel.swift in Sources */,
 				09D7675E23114A5F00E789CA /* GeoSuggestionGateway.swift in Sources */,
 				092AB4DF2313213000786394 /* APIError.swift in Sources */,
+				0910839D2313495900BCF03B /* GeocodeAddressInteractor.swift in Sources */,
 				09D767532311466900E789CA /* GetGeoSuggestionFromQueryInteractor.swift in Sources */,
 				09D767672311518B00E789CA /* Entity.swift in Sources */,
 				09D76759231147B100E789CA /* Interactor.swift in Sources */,
