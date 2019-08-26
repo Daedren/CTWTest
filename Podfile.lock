@@ -17,7 +17,7 @@ PODS:
   - Swinject (2.6.2)
 
 DEPENDENCIES:
-  - Cuckoo (from `https://github.com/Brightify/Cuckoo`, branch `master`)
+  - Cuckoo (= 1.1.1)
   - R.swift
   - RxBlocking (~> 5)
   - RxCocoa (~> 5)
@@ -29,6 +29,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Cuckoo
     - R.swift
     - R.swift.Library
     - RxBlocking
@@ -39,18 +40,8 @@ SPEC REPOS:
     - SwiftLint
     - Swinject
 
-EXTERNAL SOURCES:
-  Cuckoo:
-    :branch: master
-    :git: https://github.com/Brightify/Cuckoo
-
-CHECKOUT OPTIONS:
-  Cuckoo:
-    :commit: 4e8abcace669ea841344f7647fe7a95916d976f6
-    :git: https://github.com/Brightify/Cuckoo
-
 SPEC CHECKSUMS:
-  Cuckoo: 97d0ac8fb66248792c3cf8cb3970074b9d93952f
+  Cuckoo: 6193c50e46403cc9417aa98752671a2a5ae6f3a6
   R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
   R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
   RxBlocking: c67185d26498ea3cbe3e121917c3c16739e43123
@@ -61,6 +52,6 @@ SPEC CHECKSUMS:
   SwiftLint: 79d48a17c6565dc286c37efb8322c7b450f95c67
   Swinject: cf7458774b1b00323080a9c67e47a1ee7f9d2af1
 
-PODFILE CHECKSUM: ae5a949d252ae2b351b33849d2b301ca2a9d25f0
+PODFILE CHECKSUM: 94dea35ab08fa9c25eef6e8ee56ce1fa2471de27
 
 COCOAPODS: 1.7.2

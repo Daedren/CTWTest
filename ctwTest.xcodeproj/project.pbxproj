@@ -1779,7 +1779,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8C67EDCFFEBF861AE63A4F0D /* Pods-ctwTest-Data-ctwTest-DataTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D5C75HG392;
 				INFOPLIST_FILE = "ctwTest-DataTests/Info.plist";
@@ -1800,7 +1800,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 61AC20D3C66185554651EA8B /* Pods-ctwTest-Data-ctwTest-DataTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D5C75HG392;
 				INFOPLIST_FILE = "ctwTest-DataTests/Info.plist";

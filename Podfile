@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '12.2'
 #
 def shared_pods
     pod 'RxSwift', '~> 5'
@@ -13,7 +13,7 @@ def testing_pods
     pod 'Swinject', '~> 2.6.0'
     pod 'RxTest','~> 5'
     pod 'RxBlocking', '~> 5'
-    pod 'Cuckoo', :git => 'https://github.com/Brightify/Cuckoo', :branch => 'master'
+    pod 'Cuckoo', '1.1.1'
 end
 
 
